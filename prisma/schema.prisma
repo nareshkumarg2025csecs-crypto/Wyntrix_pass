@@ -1,0 +1,22 @@
+// Prisma Schema for Wyntrix Pixel Guard
+// Database: SQLite local file database
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+// User model for authentication and lockout management
+model User {
+  id             String    @id @default(cuid())
+  username       String    @unique // Always stored normalized lowercase
+  passwordHash   String
+  createdAt      DateTime  @default(now())
+  lastLoginAt    DateTime?
+  failedAttempts Int       @default(0)
+  lockedUntil    DateTime?
+}

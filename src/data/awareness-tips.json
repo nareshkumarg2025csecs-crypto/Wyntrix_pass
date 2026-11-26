@@ -1,0 +1,194 @@
+[
+  {
+    "id": "tip-01",
+    "topic": "passphrases",
+    "title": "Length Beats Complexity (Passphrases)",
+    "content": "A 4-word passphrase like 'correct-horse-battery-staple' has over 50 bits of entropy and is practically impossible for modern supercomputers to crack, yet easy for humans to remember!"
+  },
+  {
+    "id": "tip-02",
+    "topic": "passphrases",
+    "title": "Use Spaces in Passphrases",
+    "content": "Most modern login systems allow spaces. Separating random words with spaces creates high entropy while preventing robotic dictionary attacks."
+  },
+  {
+    "id": "tip-03",
+    "topic": "passphrases",
+    "title": "Avoid Cliché Idioms",
+    "content": "When picking words for a passphrase, pick unrelated random nouns instead of song lyrics, movie quotes, or famous proverbs that attackers have in wordlists."
+  },
+  {
+    "id": "tip-04",
+    "topic": "mfa",
+    "title": "MFA is Your Secondary Shield",
+    "content": "Multi-Factor Authentication (MFA) blocks 99.9% of automated credential stuffing attacks, even if an attacker manages to obtain your master password."
+  },
+  {
+    "id": "tip-05",
+    "topic": "mfa",
+    "title": "Prefer Authenticator Apps Over SMS",
+    "content": "SMS verification codes are vulnerable to SIM-swapping. Use hardware keys (YubiKey) or TOTP authenticator apps (Aegis, Google Authenticator) whenever possible."
+  },
+  {
+    "id": "tip-06",
+    "topic": "mfa",
+    "title": "Guard Your Backup Codes",
+    "content": "Always download and safely store your one-time recovery codes in a secure, encrypted backup in case you lose access to your primary authenticator device."
+  },
+  {
+    "id": "tip-07",
+    "topic": "password_reuse",
+    "title": "The Danger of Password Reuse",
+    "content": "When one low-security website is breached, hackers take your email/password combo and test it automatically against banks, email, and social networks (Credential Stuffing)."
+  },
+  {
+    "id": "tip-08",
+    "topic": "password_reuse",
+    "title": "Unique Passwords for Every Service",
+    "content": "Treat your digital accounts like different apartments: never use the exact same key to lock all your doors."
+  },
+  {
+    "id": "tip-09",
+    "topic": "password_reuse",
+    "title": "Never Modulate a Single Root Word",
+    "content": "Changing 'Summer2023!' to 'Winter2023!' or 'NetflixPass1' is easily guessed by automated rule-based cracking tools like Hashcat."
+  },
+  {
+    "id": "tip-10",
+    "topic": "phishing",
+    "title": "Inspect the URL Domain Carefully",
+    "content": "Phishing emails create urgent alarms ('Account suspended!'). Always examine the sender address and verify the browser URL domain before typing passwords."
+  },
+  {
+    "id": "tip-11",
+    "topic": "phishing",
+    "title": "Beware of Lookalike Domains (Typosquatting)",
+    "content": "Attackers register domains like 'paypa1.com' or 'g00gle.com'. Look out for substituted letters, zero instead of O, and unusual top-level domains."
+  },
+  {
+    "id": "tip-12",
+    "topic": "phishing",
+    "title": "Check In-App Rather Than Clicking Links",
+    "content": "If you receive an alert saying your bank or streaming account is locked, open a fresh browser tab and navigate to the official website directly."
+  },
+  {
+    "id": "tip-13",
+    "topic": "password_managers",
+    "title": "Let a Password Manager Remember for You",
+    "content": "Humans are poor random number generators. Use reputable password managers (Bitwarden, 1Password) to generate and autofill 20+ character random passwords."
+  },
+  {
+    "id": "tip-14",
+    "topic": "password_managers",
+    "title": "Strengthen Your Master Vault Password",
+    "content": "Your master password is the only key you ever have to remember. Make it a 5-to-6 word random passphrase with zero personal identifiers."
+  },
+  {
+    "id": "tip-15",
+    "topic": "password_managers",
+    "title": "Enable Biometrics & Auto-Lock",
+    "content": "Configure your password vault to auto-lock after 5-15 minutes of inactivity to protect your credentials if you step away from your device."
+  },
+  {
+    "id": "tip-16",
+    "topic": "breaches",
+    "title": "Check Your Exposure on Have I Been Pwned",
+    "content": "Over 13 billion credentials have been exposed in historical data breaches. Periodically check your email addresses on haveibeenpwned.com."
+  },
+  {
+    "id": "tip-17",
+    "topic": "breaches",
+    "title": "Rotate Breached Passwords Immediately",
+    "content": "If a company announces a security breach, rotate your password immediately and revoke all active sessions and API keys connected to that account."
+  },
+  {
+    "id": "tip-18",
+    "topic": "breaches",
+    "title": "Assume Low-Tier Forums Will Leak",
+    "content": "Never reuse critical passwords on public forums, gaming servers, or niche hobby boards, which often lack modern Argon2 or bcrypt password hashing."
+  },
+  {
+    "id": "tip-19",
+    "topic": "public_wifi",
+    "title": "Public Wi-Fi is an Open Broadcast",
+    "content": "Open Wi-Fi at coffee shops, airports, and hotels can be monitored by attackers using packet sniffers or rogue Evil Twin access points."
+  },
+  {
+    "id": "tip-20",
+    "topic": "public_wifi",
+    "title": "Always Ensure HTTPS / TLS Encryption",
+    "content": "Ensure your browser displays the secure lock icon (HTTPS). Avoid entering sensitive credentials if you encounter SSL/TLS certificate warning pages."
+  },
+  {
+    "id": "tip-21",
+    "topic": "public_wifi",
+    "title": "Use a Trusted VPN or Mobile Hotspot",
+    "content": "When working from public places, tunnel your traffic through an encrypted VPN or use your cellular mobile hotspot for confidential work."
+  },
+  {
+    "id": "tip-22",
+    "topic": "social_engineering",
+    "title": "Personal Info is Not a Secret",
+    "content": "Your pet's name, mother's maiden name, birthday, and high school are easily discoverable on social media. Never use them as passwords or security question answers."
+  },
+  {
+    "id": "tip-23",
+    "topic": "social_engineering",
+    "title": "Treat Security Questions Like Passwords",
+    "content": "When websites ask 'What is your favorite food?', don't type 'Pizza'. Type a random string or passphrase stored in your password manager."
+  },
+  {
+    "id": "tip-24",
+    "topic": "social_engineering",
+    "title": "No Tech Support Will Ever Ask for Your Password",
+    "content": "Legitimate security administrators, banks, and IT staff will never ask you to disclose your password or your 6-digit MFA token over phone or email."
+  },
+  {
+    "id": "tip-25",
+    "topic": "updates",
+    "title": "Keep Operating Systems & Browsers Updated",
+    "content": "Security patches fix zero-day vulnerabilities in memory management and crypto libraries. Enable automatic updates on your OS and web browser."
+  },
+  {
+    "id": "tip-26",
+    "topic": "updates",
+    "title": "Audit Browser Extensions",
+    "content": "Malicious or abandoned browser extensions can read keystrokes and session cookies. Uninstall extensions you do not actively need and trust."
+  },
+  {
+    "id": "tip-27",
+    "topic": "updates",
+    "title": "Keep Firmware on Routers & IoT Fresh",
+    "content": "Home routers and smart devices are frequent targets for botnets. Update their firmware and disable remote admin management over the WAN."
+  },
+  {
+    "id": "tip-28",
+    "topic": "complexity",
+    "title": "Leetspeak Doesn't Trick Modern Attackers",
+    "content": "Substituting 'P@ssw0rd1' with '@' for 'a' and '0' for 'o' is tested in the first millisecond of any dictionary attack rule."
+  },
+  {
+    "id": "tip-29",
+    "topic": "complexity",
+    "title": "Avoid Keyboard Walks (qwerty, 1qaz2wsx)",
+    "content": "Tracing paths across physical keyboard rows or columns ('asdfghjk', 'zaq12wsx') are standard entries in every cracker's wordlist."
+  },
+  {
+    "id": "tip-30",
+    "topic": "complexity",
+    "title": "Repeated Sequences Tank Real Entropy",
+    "content": "A 16-character password like 'PasswordPassword' sounds long, but has negligible effective entropy because of immediate chunk repetition."
+  },
+  {
+    "id": "tip-31",
+    "topic": "policy",
+    "title": "NIST SP 800-63B Password Guidelines",
+    "content": "The official NIST digital identity guidelines recommend long passphrases, checking against breach corpuses, and ending forced periodic 90-day password expiration."
+  },
+  {
+    "id": "tip-32",
+    "topic": "policy",
+    "title": "OWASP ASVS Standard",
+    "content": "OWASP Application Security Verification Standard mandates minimum 8-12 character lengths, rate limiting on authentication routes, and secure salted hashing algorithms like Argon2id."
+  }
+]

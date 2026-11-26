@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Pixel Garden (Light theme default) */
+  --bg-page: #FBF6EA;
+  --bg-panel: #FFFDF6;
+  --text-main: #1B1F1A;
+  --text-muted: #536257;
+  --border-main: #1B1F1A;
+  --accent-green: #5B9A73;
+  --accent-green-deep: #2F6B4F;
+  --accent-orange: #F2A65A;
+  --accent-blush: #F4B6B0;
+  --accent-danger: #D95F5F;
+  --accent-gold: #E8C547;
+  --card-shadow: 4px 4px 0px 0px #1B1F1A;
+  --card-shadow-sm: 2px 2px 0px 0px #1B1F1A;
+}
+
+.dark {
+  /* Night Terminal (Dark theme) */
+  --bg-page: #0F1714;
+  --bg-panel: #16221D;
+  --text-main: #E7F2EB;
+  --text-muted: #8AA495;
+  --border-main: #7FD1A0;
+  --accent-green: #7FD1A0;
+  --accent-green-deep: #4C8A67;
+  --accent-orange: #F2A65A;
+  --accent-blush: #F4B6B0;
+  --accent-danger: #D95F5F;
+  --accent-gold: #E8C547;
+  --card-shadow: 4px 4px 0px 0px #060A08;
+  --card-shadow-sm: 2px 2px 0px 0px #060A08;
+}
+
+/* Subtle pixel dither background texture */
+.pixel-dither-bg {
+  background-color: var(--bg-page);
+  background-image: radial-gradient(var(--text-muted) 0.75px, transparent 0.75px),
+                    radial-gradient(var(--text-muted) 0.75px, var(--bg-page) 0.75px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  opacity: 0.98;
+}
+
+/* Crisp pixel rendering across browsers */
+.pixelated {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Pixel Card & Panel styling */
+.pixel-card {
+  background-color: var(--bg-panel);
+  color: var(--text-main);
+  border: 2px solid var(--border-main);
+  box-shadow: var(--card-shadow);
+  position: relative;
+}
+
+.pixel-card-sm {
+  background-color: var(--bg-panel);
+  color: var(--text-main);
+  border: 2px solid var(--border-main);
+  box-shadow: var(--card-shadow-sm);
+}
+
+/* Hard pixel border with corners */
+.pixel-border {
+  border: 2px solid var(--border-main);
+}
+
+.pixel-border-sm {
+  border: 1px solid var(--border-main);
+}
+
+/* Pixel Button with pressed-down 8-bit response */
+.pixel-btn {
+  position: relative;
+  border: 2px solid var(--border-main);
+  box-shadow: 3px 3px 0px 0px var(--border-main);
+  transition: transform 0.06s steps(2, jump-none), box-shadow 0.06s steps(2, jump-none);
+  user-select: none;
+}
+
+.pixel-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px var(--border-main);
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px var(--border-main);
+}
+
+.pixel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: 2px 2px 0px 0px var(--border-main);
+}
+
+/* Focus outline for keyboard navigation accessibility */
+*:focus-visible {
+  outline: 3px solid var(--accent-gold) !important;
+  outline-offset: 2px !important;
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
